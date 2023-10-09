@@ -57,8 +57,7 @@ def apply_patches(filename):
     with open(filename, "wb") as output_file:
         output_file.write(data)
         
-
-if __name__ == "__main__":
+def main():
     if(not isfile("medieval2.exe")):
         raise SystemExit(
             "medieval2.exe not found, make sure the file exists in the same folder/directory")
@@ -72,3 +71,7 @@ if __name__ == "__main__":
     else:
         apply_patches("medieval2.exe")
         print("medieval2.exe patched successfully")
+
+
+if __name__ == "__main__":
+    main()
