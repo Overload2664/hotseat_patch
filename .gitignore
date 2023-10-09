@@ -1,0 +1,6 @@
+venv/
+
+# PyInstaller specific packages
+build/
+dist/
+hotseat_patch.spec
